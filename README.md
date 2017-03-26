@@ -1,4 +1,4 @@
-# Speech Technologies
+# Speech Technologies. Universitat Politècnica de Catalunya
 
 Assignment: Language Modeling  
 Professor: José Adrián Rodríguez Fonollosa
@@ -24,7 +24,7 @@ $ git clone https://github.com/jarfo/st2.git
 ```
 - Download and install the SRI Language Modeling Toolkit
 - Download English corpora for training
-- Obtain different language models with different methods, orders and training corpus sizes. You can also try different concatenations of corpus or corpus interpolation with the tool compute-best-mix http://www-speech.sri.com/projects/srilm/manpages/ppl-scripts.1.html
+- Obtain different language models with different methods, orders and training corpus sizes. You can also try different concatenations of corpus or corpus interpolation with the tool compute-best-mix http://www-speech.sri.com/projects/srilm/manpages/ppl-scripts.1.html  
 Example:
 ```
 $ ./tokenizer.perl -l en < train_a.en > train_a.en.tok
