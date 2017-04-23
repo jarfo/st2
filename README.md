@@ -43,11 +43,10 @@ iteration 6, lambda = (0.900771 0.0992293), ppl = 21.8397
 iteration 7, lambda = (0.903055 0.0969449), ppl = 21.8387
 59749 non-oov words, best lambda (0.904048 0.0959522)
 pairwise cumulative lambda (1 0.0959522)
-$ ngram -order 4 -lm model_a.arpa -mix-lm model_b.arpa -lambda 0.9 -write-lm mymodel.arpa
 ```
 - Evaluate your language models with the ngram program and the provided test corpus (newstest2016-deen-ref.en) in terms of perplexity and Out Of Vocabulary (OOV) words
 ```
-$ ngram -lm mymodel.arpa -ppl newstest2016-deen-ref.en.tok
+$ ngram -order 4 -lm model_a.arpa -mix-lm model_b.arpa -lambda 0.9 -ppl newstest2016-deen-ref.en.tok
 file newstest2016-deen-ref.en.tok: 2999 sentences, 64503 words, 2471 OOVs
 0 zeroprobs, logprob= -173665 ppl= 468.275 ppl1= 630.39
 ```
